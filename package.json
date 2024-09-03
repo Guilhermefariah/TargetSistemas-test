@@ -1,0 +1,19 @@
+{
+  "name": "teste-target",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc src/letter/Letter.ts src/fibonacci/Fibonacci.ts src/sum/sum.ts --outDir build",
+    "start-letter": "node build/letter/Letter.js",
+    "start-fibonacci": "node build/fibonacci/Fibonacci.js",
+    "start-sum": "node build/sum/sum.js",
+    "start": "node build/letter/Letter.js && node build/fibonacci/Fibonacci.js && node build/sum/sum.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.5.4"
+  }
+}
